@@ -25,7 +25,7 @@ const html = () => {
 		.pipe(pug({
 			pretty: true
 		}))
-		.pipe(gulp.dest('build'))
+		.pipe(gulp.dest('dist'))
 		.pipe(browserSync.stream());
 }
 
@@ -37,25 +37,25 @@ const styles = () => {
 		}))
 		.pipe(autoprefixer())
 		.pipe(sourcemaps.write('/maps'))
-		.pipe(gulp.dest("build/css"))
+		.pipe(gulp.dest("dist/css"))
 		.pipe(browserSync.stream());
 }
 
 const scripts = () => {
 	return gulp.src('src/js/**/*.js')
-		.pipe(gulp.dest('build/js'))
+		.pipe(gulp.dest('dist/js'))
 		.pipe(browserSync.stream());
 }
 
 const fonts = () => {
 	return gulp.src('src/fonts/**/*.*')
-		.pipe(gulp.dest('build/fonts/'))
+		.pipe(gulp.dest('dist/fonts/'))
 		.pipe(browserSync.stream());
 }
 
 const images = () => {
 	return gulp.src("src/images/**/*.+(png|jpg|gif|svg)")
-		.pipe(gulp.dest("build/images/"))
+		.pipe(gulp.dest("dist/images/"))
 		.pipe(browserSync.stream());
 }
 
@@ -64,19 +64,19 @@ const imagesWebp = () => {
 		.pipe(squoosh({
 			webp: {}
 		}))
-		.pipe(gulp.dest("build/images/"))
+		.pipe(gulp.dest("dist/images/"))
 		.pipe(browserSync.stream());
 }
 
 const imagesProd = () => {
 	return gulp.src("src/images/**/*.+(png|jpg|gif|svg)")
 		.pipe(squoosh())
-		.pipe(gulp.dest("build/images/"))
+		.pipe(gulp.dest("dist/images/"))
 		.pipe(browserSync.stream());
 }
 
 const cleanBuild = () => {
-	return del('build/**', {force:true});
+	return del('dist/**', {force:true});
 }
 
 const watcher = () => {
@@ -91,7 +91,7 @@ const watcher = () => {
 const server = () => {
 	browserSync.init({
 		server: {
-			baseDir: "build/"
+			baseDir: "dist/"
 		},
 		port: 3000,
 		open: true
