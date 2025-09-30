@@ -1,0 +1,108 @@
+extends templates/layout
+include templates/_mixins
+
+block nav
+	- var currentTitle = "projects.html";
+	+nav(currentTitle)
+
+block content
+	main
+		.wrapper
+			.project-item.project-item--med
+				a(href="projects.html") Alle Projekte
+				.project-item__header
+					h1 Via Line
+					p.sub-header Eine Online-Plattform für Frachttransporte, die Kunden und Spediteure miteinander verbindet
+
+				.project-item__cover 
+					img(src="images/via-cover.png" alt="Via Line")
+
+				.project-item__row 
+					.project-item__heading 
+						h3 Worum geht es im Projekt
+					.project-item__info
+						p Das Projekt optimiert den Prozess der Suche und Buchung von Frachttransporten, hilft Kunden, geeignete Transportmöglichkeiten zu finden und ermöglicht die Auswahl von Spediteuren nach Bewertungen und anderen Kriterien. Spediteure haben Zugang zu einer Auftragsdatenbank und können Routen sowie Fahrzeugauslastung planen. Transporte werden sowohl im Inland als auch international durchgeführt. Der Schwerpunkt liegt auf Lieferungen von Russland nach Europa, da es aufgrund von Zollschwierigkeiten und Sanktionen nicht viele Angebote in diesem Bereich gibt. Die Plattform bietet Spediteuren Unterstützung beim Erhalt der erforderlichen Dokumente und Genehmigungen für den Gütertransport. 
+
+				.project-item__row
+					.project-item__heading
+						h3 User Research
+					.project-item__info
+						.project-item__info-sm
+							h4 Wettbewerbsanalyse
+							.project-item__info-xs
+								p Ich habe mehrere Wettbewerber auf dem Markt analysiert und verglichen, wie der Bestellprozess abläuft, wie sich die Transportstatus ändern und welche Funktionen und Vorteile es gibt.
+							.project-item__info-xs
+								p
+									strong Schlussfolgerungen: 
+									|  Jeder Service hat seine eigene Nische: "Delovye Linii" führt bei interregionalen Transporten, Yandex Delivery konzentriert sich auf schnelle Stadtlieferungen, und 2082.ru verbindet Versender und Spediteure zur Steigerung der Transporteffizienz. Unser Service wird sowohl eine Transportbörse als auch einen Lieferdienst für Privatpersonen kombinieren.
+							.js-gallery
+								a(href="images/via-01.png")
+									img(src="images/via-01.png" alt="Wettbewerbsanalyse")
+						.project-item__info-sm
+							h4 Benutzerszenarien
+							p Der Service bietet zahlreiche Szenarien. Als Beispiel betrachten wir zwei Szenarien: das Hinzufügen einer Fracht zur Plattform und Angebote von Spediteuren für den Transport.
+							.owl-carousel.js-owl-carousel
+								div 
+									.gallery 
+										a(href="images/via-02-1.png")
+											img(src="images/via-02-1.png" alt="User Scenarios")
+								div 
+									.gallery 
+										a(href="images/via-02-2.png")
+											img(src="images/via-02-2.png" alt="User Scenarios")
+								
+
+				.project-item__row
+					.project-item__heading
+						h3 Wireframes
+					.project-item__info 
+						.project-item__info-xs
+							h4 Beschreibung der Bildschirme und Elemente
+							p Für die Beschreibung der Bildschirme habe ich Miro verwendet, wo man in Form von Wireframes Prototypen von Layouts erstellen, diese mit Entwicklern und dem Produktleiter besprechen.
+						.owl-carousel.js-owl-carousel
+							div 
+								.gallery 
+									a(href="images/via-03-1.png")
+										img(src="images/via-03-1.png" alt="Wireframes")
+							div 
+								.gallery 
+									a(href="images/via-03-2.png")
+										img(src="images/via-03-2.png" alt="Wireframes")
+							div 
+								.gallery 
+									a(href="images/via-03-3.png")
+										img(src="images/via-03-3.png" alt="Wireframes")
+
+				.project-item__row
+					.project-item__heading
+						h3 Design System
+					.project-item__info
+						.project-item__info-xs
+							h4 Untitled UI
+							p Für das Projekt habe ich das Design-System Untitled UI verwendet. Wenn einige Komponenten fehlten, habe ich sie selbst ergänzt.
+						.js-gallery
+							a(href="images/via-04.png")
+								img(src="images/via-04.png" alt="Design System")
+
+
+				.project-item__row
+					.project-item__images.js-gallery 
+						each item, i in viaLIne 
+							.project-item__images-item
+								.project-item__images-info
+									span= i+1 + '/7'
+									if item.strong !== ''
+										p
+											strong= item.strong
+											.
+												#{item.info} 
+									else 
+										p= item.info 
+								a(href= item.url)
+									img(src = item.url alt="")
+
+
+	.all-projects 
+		h2 
+			a(href="projects.html") Alle Projekte 
+		a(href="projects.html" class="button") Anschauen

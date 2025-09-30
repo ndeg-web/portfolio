@@ -1,0 +1,89 @@
+extends templates/layout
+include templates/_mixins
+
+block nav
+	- var currentTitle = "projects.html";
+	+nav(currentTitle)
+
+block content
+	main
+		.wrapper
+			.project-item.project-item--med
+				a(href="projects.html") Alle Projekte
+				.project-item__header
+					h1 Medizinischer Managementdienst
+
+				.project-item__cover 
+					img(src="images/mmd-cover.png" alt="Medizinischer Managementdienst")
+
+				.project-item__row
+					.project-item__heading
+						h3 Worum geht es im Projekt
+					.project-item__info
+						p System zur Verarbeitung von Berichten von medizinischen Organisationen. Es ermöglicht das Sammeln von Daten von medizinischen Organisationen an einem zentralen Ort, die Verarbeitung von Berichten, die Sammlung von Statistiken und die Überwachung von untergeordneten medizinischen Einrichtungen.
+
+				.project-item__row
+					.project-item__heading
+						h3 Projektziel
+					.project-item__info
+						p Es ist nötig, ein System zu schaffen, mit dem medizinische Organisationen Berichte an Kontrollorganisationen senden können. Da solche Berichte früher nach schnell veraltenden Vorlagen gesendet wurden, musste viel Arbeit manuell erledigt werden. Das System hilft, die Berichtsverarbeitung zu automatisieren und gleichzeitig die Manager von medizinischen Organisationen bei der Ausfüllung von Berichten nicht zu überlasten. Es war notwendig, ein solches System zu schaffen, das es Managern ermöglicht, intuitiv zu verstehen, wie sie verschiedene Berichte hochladen, Fehler in den Berichten erkennen und sie schnell korrigieren können.
+
+
+
+				.project-item__row
+					.project-item__heading
+						h3 Meine Rolle und Arbeitsprozess
+					.project-item__info
+						.project-item__info-sm
+							h4 Wettbewerbsanalyse
+							p Das Projekt hat keine direkten Konkurrenten. Ich habe jedoch zwei ähnliche Dienste gefunden, mit denen Benutzer Berichte für das Finanzamt und die Sozialämter ausfüllen können. Zusätzlich zu den Berichten ermöglichen diese Dienste das Führen von Mitarbeiteraufzeichnungen, die Berechnung von Gehältern und das Erstellen von Statistiken.
+							.js-gallery
+								a(href="images/mmd-01.png")
+									img(src="images/mmd-01.png" alt="Wettbewerbsanalyse")
+						.project-item__info-sm
+							h4 Zielgruppenanalyse
+							p Um die Zielgruppe besser zu verstehen, habe ich mehrere ausführliche Interviews geführt. In unserem System gibt es zwei Benutzerrollen: den Leiter der Poliklinik, der den Bericht versendet, und den Leiter der Verwaltungsorganisation, der den Bericht überprüft. Durch die Interviews konnten die Hauptprobleme der Benutzer identifiziert werden.
+							.js-gallery
+								a(href="images/mmd-02.png")
+									img(src="images/mmd-02.png" alt="Zielgruppenanalyse")
+						.project-item__info-sm
+							h4 Ausarbeitung eines Szenarios
+							p Ich habe die Schwierigkeiten analysiert, mit denen Benutzer konfrontiert sind, und mehrere Hypothesen entwickelt, um potenzielle Probleme zu vermeiden. Da der Dienst zwei verschiedene Nutzungsszenarien für unterschiedliche Benutzerrollen umfasst, habe ich eine Tabelle erstellt, die die wichtigsten Interaktionen zwischen Benutzer und System beschreibt.
+							.js-gallery
+								a(href="images/mmd-03.png")
+									img(src="images/mmd-03.png" alt="Ausarbeitung eines Szenarios")
+						.project-item__info-sm
+							h4 Beschreibung von Bildschirmen und Elementen
+							p Zur Beschreibung der Bildschirme habe ich Wireflow eingesetzt – eine Kombination aus Wireframe- und Userflow-Funktionalität. In Miro habe ich die Hauptbildschirme detailliert beschrieben und visualisiert, wie die Elemente je nach Benutzerrolle und Szenario interagieren.
+							.js-gallery
+								a(href="images/mmd-04.png")
+									img(src="images/mmd-04.png" alt="Beschreibung von Bildschirmen und Elementen")
+						.project-item__info-sm
+							h4 Auswahl einer Komponentenbibliothek
+							p Um das Erstellen von Layouts und die Entwicklung grundlegender Elemente zu beschleunigen, habe ich die Open-Source-Komponentenbibliothek Gravity UI verwendet. Fehlende Komponenten, die in der Bibliothek nicht enthalten waren, habe ich manuell erstellt.
+						.project-item__info-sm
+							h4 Layout-Zeichnung
+							p Als Beispiel zeige ich das Layout für das Szenario „Hochladen und Versenden eines Berichts zur Überprüfung sowie den Ablauf der Berichtsvalidierung und die Rücksendung zur Überarbeitung. In die Berichtsvalidierung sind sowohl der Benutzer, der den Bericht hochlädt, als auch der Manager, der den Bericht prüft und validiert, involviert.
+
+				.project-item__row
+					.project-item__images.js-gallery 
+						each item, i in slider
+							.project-item__images-item
+								.project-item__images-info
+									span= i+1 + '/12'
+									p= item.info
+								a(href= item.url)
+									img(src = item.url alt="")
+
+				.project-item__row
+					.project-item__heading
+						h3 Fazit
+					.project-item__info
+						.project-item__info-sm
+							p Die Arbeit an dem Projekt war zwar nicht einfach, aber sie hat mir viel Zufriedenheit gebracht. Durch das Projekt habe ich gelernt, wie man die Anforderungen der Zielgruppe analysiert, die Bedürfnisse der Benutzer versteht und sorgfältig am User Interface arbeitet.
+
+
+	.all-projects 
+		h2 
+			a(href="projects.html") Alle Projekte 
+		a(href="projects.html" class="button") Anschauen

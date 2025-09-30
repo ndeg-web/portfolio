@@ -1,0 +1,100 @@
+extends templates/layout
+include templates/_mixins
+
+block nav
+	- var currentTitle = "projects.html";
+	+nav(currentTitle)
+
+block content
+	main
+		.wrapper
+			.project-item
+				a(href="projects.html") Alle Projekte
+				.project-item__header
+					h1 Evropafilmact
+
+				.project-item__row
+					.project-item__heading
+						h4 Worum geht es im Projekt
+					.project-item__info
+						p Website des jährlichen europäischen Autorenfilmfestivals in Paris.
+
+				.project-item__row
+					.project-item__heading
+						h4 Projektziel
+					.project-item__info
+						p Die Hauptaufgabe bestand darin, die Nutzer über das Programm des Festivals zu informieren und eine responsive Website zu erstellen, da die Zahl der Nutzer von Smartphones Jahr für Jahr zunahm.
+
+				.project-item__row
+					.project-item__heading
+						h4 Meine Rolle und Arbeitsprozess
+					.project-item__info
+						.project-item__info-sm 
+							h5 Informationssammlung von Kunden
+							p In diesem Projekt war ich als Projektleiterin, Designerin und Frontend-Entwicklerin tätig. Ich habe regelmäßig mit den Kunden telefoniert und alle Details des Projekts besprochen. Sie hatten bereits eine Website, waren aber mit dem Stil nicht zufrieden. Sie wollten eine helle Website mit viel Luft und einem schönen Design.
+						.project-item__info-sm
+							h5 Informationen verarbeiten und Referenzen suchen
+							p Zuerst habe ich die Struktur der Website gemacht, um besser zu verstehen, wie groß das Projekt ist. Dann haben wir Referenzen besprochen und eine passende Variante ausgewählt.
+							.gallery 
+								a(href="images/evr-2.png")
+									img(src="images/evr-2.png" alt="")
+						.project-item__info-sm
+							h5 Responsive Layouts
+							p Nach der Genehmigung des Prototyps habe ich die Layouts gestaltet. Es war hier wichtig, dass alle Sektione detailliert responsiv werden, damit während der Entwicklung der Website keine Fragen auftauchen, wie verschiedene Elemente aussehen und sich verhalten werden.
+						.project-item__info-sm
+							h5 Front-End Entwicklung der Website
+							p Danach habe ich den Front-End Teil der Entwicklung gemacht. Ich habe Pug für HTML und Sass für CSS benutzt. Diese Präprozessoren ergänzen HTML und CSS mit Variablen, Funktionen und Mixins und helfen, den Code schlank zu halten. Den Code kann man auf github ansehen.
+						.project-item__info-sm
+							h5 Gemeinsame Arbeit mit einem Back-End-Programmierer
+							pIch habe parallel mit einem Back-End-Programmierer gearbeitet und den gesamten Prozess kontrolliert. Zusammen haben wir das Projekt abgeschlossen.
+
+
+				.project-item__row
+					.project-item__heading
+						h4 Beispiellayouts
+					.project-item__info
+						.project-item__info-sm
+							p Da die Zielgruppe der Website die Bewohner von Frankreich sind, haben wir uns entschieden, die Website in französischer Sprache zu erstellen, um besser verstehen zu können, wie sich die Wörter auf den Website darstellen.
+							p Die Website hatte zwei Aufgaben: Während des Festivals war es wichtig, ein Programm des Festivals zu präsentieren, Experten kennenzulernen und Fotos von vergangenen Festivals zu zeigen. Zu anderen Zeiten des Jahres finden online Filme statt, deshalb war es wichtig, Benutzer zu informieren und über aktuelle Veranstaltungen zu berichten.
+							p Das Design wurde so erstellt, dass einige Blöcke mit einem CMS leicht versteckt werden können. Zum Beispiel sollte das Kinoprogramm nur während des Festivals angezeigt werden.
+						.gallery 
+							a(href="images/evr-3.png")
+								img(src="images/evr-3.png" alt="")
+
+				.project-item__row
+					.project-item__heading
+						h4 Mobile Version
+					.project-item__info
+						.project-item__info-sm
+							p Da viele Benutzer die Website von einem Smartphone besuchen, war es notwendig, responsive Layouts zu erstellen. Ich habe 4 Varianten für diese Auflösungen erstellt: 375px, 768px, 1366px und 1920px. Außerdem wurden alle Texte, Überschriften, Menüs und andere Elemente für Smartphones optimiert.
+						
+						.gallery 
+							a(href="images/evr-4.png")
+								img(src="images/evr-4.png" alt="")
+						
+						.project-item__info-sm
+							p Das Menü und die Fußzeile der Website wurden für Smartphone-Nutzer optimiert.
+						
+						.gallery 
+							a(href="images/evr-5.png")
+								img(src="images/evr-5.png" alt="")
+						
+						.project-item__info-sm
+							p So sah das Kinoprogramm aus.
+						
+						.gallery 
+							a(href="images/evr-6.png")
+								img(src="images/evr-6.png" alt="")
+
+				.project-item__row
+					.project-item__heading 
+						h4 Frontend
+					.project-item__info
+						p Bei diesem Projekt habe ich nicht nur das Design, sondern auch das Frontend erstellt. Ich habe PUG für HTML, SASS für CSS3 und JavaScript für die interaktiven Elemente verwendet. Der Code kann man auf 
+							a(href="https://hen04.github.io/evropafilmakt/build/" target="_blank") Github&nbsp;Pages 
+							| eingesehen werden. Alle Farbstile, Schriftgrößen und Einrückungen wurden mit Variablen erstellt, so dass sie leicht ersetzt werden können. Textblöcke werden in einer JSON-Datei zusammengefasst, um den Inhalt an einer Stelle ändern zu können. Dieses Prinzip ermöglicht es, den Inhalt schnell zu ändern, ohne den Code zu überladen.
+
+	.all-projects 
+		h2 
+			a(href="projects.html") Alle Projekte 
+		a(href="projects.html" class="button") Anschauen

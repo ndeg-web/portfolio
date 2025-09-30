@@ -1,0 +1,135 @@
+extends templates/layout
+include templates/_mixins
+
+block nav
+	- var currentTitle = "projects.html";
+	+nav(currentTitle)
+
+block content
+	main
+		.wrapper
+			.project-item
+				a(href="projects.html") Alle Projekte
+				.project-item__header
+					h1 MyDoc. Telemedizin
+
+				.project-item__row
+					.project-item__heading
+						h4 Worum geht es im Projekt
+					.project-item__info
+						p Ein Telemedizinisches Projekt.
+
+				.project-item__row
+					.project-item__heading
+						h4 Projektziel
+					.project-item__info
+						p Erstellung einer Website, die es ermöglicht, einen Arzttermin zu vereinbaren, eine Behandlung per Videochat in Anspruch zu nehmen und eine Testinterpretation zu erhalten. Nach der Konsultation sind alle Empfehlungen im persönlichen Konto des Patienten verfügbar. Auf der Website kann man nicht nur einen Arzt auswählen und einen Termin vereinbaren, sondern auch ein Gesundheitsprogramm oder eine Versicherung kaufen. Es ist auch möglich, einen Tierarzt für die Behandlung von Tieren (Katzen, Hunde, Kaninchen, Vögel und andere) zu konsultieren.
+
+				.project-item__row
+					.project-item__heading
+						h4 Meine Rolle und Arbeitsprozess
+					.project-item__info
+						.project-item__info-sm 
+							h5 Informationssammlung vom Kunden und vom Projektleiter
+							p Ich arbeitete mit dem Projektleiter und dem Kunden zusammen, die geäußerte ein Problem, das mit der Schnittstelle gelöst werden musste. Meistens gab es verschiedene Einschränkungen, die sich im Website-Verwaltungssystem befinden. Dies wurde vor dem öffentlichen Teil der Website entwickelt. Die Einschränkungen standen meist im Zusammenhang mit der Funktionsweise des medizinischen elektronischen Systems in der Russischen Föderation.
+						.project-item__info-sm 
+							h5 Informationen verarbeiten und Lösungen finden
+							p Wir arbeiteten mit dem Projektleiter auf diese Weise: Entweder hatte ich eine Textbeschreibung der Aufgabe, oder der Projektleiter machte die Schemen, die ich zunächst in Prototypen verarbeitet habe und dann in eine Schnittstelle gestaltet habe.
+							.gallery 
+								a(href="images/mdoc-2.png")
+									img(src="images/mdoc-2.png" alt="")
+						.project-item__info-sm 
+							p Die Arbeit mit den Prototypen fand in mehreren Iterationen statt, es gab viele Verfeinerungen im Prozess, einige Optionen passten aus verschiedenen Gründen nicht und dann suchte ich nach neuen Lösungen, um die Aufgabe zu realisieren.
+							.gallery 
+								a(href="images/mdoc-3.png")
+									img(src="images/mdoc-3.png" alt="")
+						.project-item__info-sm 
+							h5 Erstellung von responsiven Layouts
+							p Nachdem die Prototypen erstellt wurden, gestaltete ich die Layouts. Es war wichtig, alle Details der Funktionalität zu berücksichtigen und responsive Layouts für solche Bildschirmauflösungen zu erstellen: 360px, 768px und 1600px.
+						.project-item__info-sm 
+							h5 Frontend und weitere Arbeit mit Backend
+							p Auf Wunsch der Backend-Programmierer verwendete ich die Bootstrap-Bibliothek, für CSS verwendete ich SCSS. Nachdem der Frontend-Teil der Website erstellt wurde, übergab ich den Code an den Backend-Programmierer und überwachte das Ergebnis. Wenn es Probleme gab, haben wir sie zusammen mit dem Backend-Programmierer gelöst.
+
+				.project-item__row
+					.project-item__heading
+						h4 Beispiellayouts
+					.project-item__info
+						.project-item__info-sm 
+							p Betrachten wir als Beispiel den Weg eines Benutzers, der eine Beratung bei einem Therapeuten buchen möchte. Als Erstes muss er sich auf der Website registrieren oder anmelden. Um sich zu registrieren, geben Sie einfach Ihre Telefonnummer ein, an die ein Verifizierungscode gesendet wird.
+							.gallery 
+								a(href="images/mdoc-4.png")
+									img(src="images/mdoc-4.png" alt="")
+							p Nachdem ein Benutzer eingeloggt ist, kann er nach einem Arzt suchen und sich per Video oder Chat beraten lassen.
+							.gallery 
+								a(href="images/mdoc-5.png")
+									img(src="images/mdoc-5.png" alt="")
+							p Nachdem der Benutzer eine Konsultation (Kardiologie, Augenheilkunde, Neurologie usw.) ausgewählt hat, muss er für den Dienst bezahlen.
+							.gallery 
+								a(href="images/mdoc-6.png")
+									img(src="images/mdoc-6.png" alt="")
+							p Nach der Bezahlung wird der Konsultationswunsch in das System eingegeben. Jeder verfügbare Arzt kann den Patienten sehen und seine Fragen beantworten.
+							.gallery 
+								a(href="images/mdoc-7.png")
+									img(src="images/mdoc-7.png" alt="")
+							p Wenn Fragen im Chat nicht geklärt werden konnten, können Sie den Arzt über den Service anrufen.
+							.gallery 
+								a(href="images/mdoc-8.png")
+									img(src="images/mdoc-8.png" alt="")
+
+
+				.project-item__row
+					.project-item__heading
+						h4 Mobile App
+					.project-item__info
+						.project-item__info-sm 
+							p Außer der Webversion des Dienstes habe ich eine mobile App für iOS und Android gestaltet. Da die Hauptaufgabe darin besteht, den Nutzer zu einem Chat mit einem Arzt zu führen, beschlossen wir, die Textseiten zu entfernen und nur kurze Beschreibungen der Dienstleistungen und eine einfachere Möglichkeit zur Bestellung einer Konsultation mit der Möglichkeit, einen Arzt anzurufen, zu hinterlassen.
+						.owl-carousel.js-owl-carousel
+							div 
+								.gallery 
+									a(href="images/mdoc-slider-1.png")
+										img(src="images/mdoc-slider-1.png" alt="")
+									p Links ist der Chatraum des Arztes, rechts ist der Chatraum des Patienten
+
+							div 
+								.gallery 
+									a(href="images/mdoc-slider-2.png")
+										img(src="images/mdoc-slider-2.png" alt="")
+									p Links ist das Menü des Arztes, rechts ist der Bildschirm für Patientenanrufe
+							div 
+								.gallery 
+									a(href="images/mdoc-slider-3.png")
+										img(src="images/mdoc-slider-3.png" alt="")
+									p Links ist der Bildschirm für das Patientengespräch, rechts ist der Bildschirm für das Ende des Gesprächs
+							div 
+								.gallery 
+									a(href="images/mdoc-slider-4.png")
+										img(src="images/mdoc-slider-4.png" alt="")
+									p Links ist der Benutzerbildschirm, rechts ist der Bildschirm, auf dem Sie Ihr Feedback abgeben können
+							div 
+								.gallery 
+									a(href="images/mdoc-slider-5.png")
+										img(src="images/mdoc-slider-5.png" alt="")
+									p Bildschirme zum Senden von Rückmeldungen
+									
+
+				.project-item__row
+					.project-item__heading
+						h4 Design-System
+					.project-item__info
+						.project-item__info-sm 
+							p Ich verwendete ein System von Komponenten und Varianten sowie Text- und Farbvariablen. Dadurch konnte ich Zeit sparen und die Layouts in einer übersichtlicheren Form an die Entwicklung weitergeben. Für die Bibliothek habe ich ein separates Projekt verwendet, das mit dem Hauptprojekt verknüpft ist.
+							p So gab es beispielsweise zwei visuelle Optionen für Schaltflächen — Primary und Secondary. Es gab 3 Größen: LG, MD, SM und Mit Symbol.
+							.gallery 
+								a(href="images/mdoc-9.png")
+									img(src="images/mdoc-9.png" alt="")
+						.project-item__info-sm 
+							p Ich habe auch alle Zustände der interaktiven Elemente detailliert gestaltet, damit der Programmierer keine Fragen hat, wie er diesen oder jenen Block implementieren soll. Zum Beispiel hat der Block mit den Arztterminen mehrere Zustände — der Patient kann einen Wochentag wählen (der Tag, an dem der Arzt nicht verfügbar ist, ist grau markiert), der aktive Tag ist blau markiert, dann muss der Benutzer eine passende Uhrzeit wählen. Wenn der Patient den Arzt zu Hause aufsuchen möchte, kann er die Zeit vor oder nach dem Mittagessen wählen. Wenn der Arzt keine Zeit hat, kann eine Telefonnummer hinterlassen werden, und der Klinikmanager ruft den Patienten zurück, um einen Termin zu vereinbaren.
+							.gallery 
+								a(href="images/mdoc-10.png")
+									img(src="images/mdoc-10.png" alt="")
+							p Die Optionen für die Arztwahl sind in zwei Größen verfügbar — MD und SM. Diese Größen werden vom Frontend-Entwickler benötigt, damit der Block auf verschiedenen Bildschirmauflösungen korrekt angezeigt wird.
+
+	.all-projects 
+		h2 
+			a(href="projects.html") Alle Projekte 
+		a(href="projects.html" class="button") Anschauen

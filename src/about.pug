@@ -1,0 +1,53 @@
+extends templates/layout
+include templates/_mixins
+
+block nav
+	- var currentTitle = "about.html";
+	+nav(currentTitle)
+
+
+block content
+	main
+		.wrapper
+			h1 Erfahrung
+			.about
+				.about__item
+					.about__item-heading 
+						h3 Arbeitserfahrung  
+					.about__item-content 
+						each item in experience 
+							.about__item-sm 
+								h4= item.position 
+								h5.position= item.title 
+								p.time= item.time
+								.about__item-sm-list
+									each subitem in item.detail
+										p= subitem.item
+				.about__item
+					.about__item-heading
+						h3 Kenntnisse 
+					.about__item-content
+						each item in about
+							.about__item-sm
+								h4= item.title
+								.about__item-sm-tags 
+									each subitem in item.descr 
+										span= subitem.item
+				.about__item
+					.about__item-heading 
+						h3 Werte und Arbeitsweise
+					.about__item-content
+						ul.list 
+							each item in values
+								li= item.item
+
+				.about__item
+					.about__item-heading 
+						h3 Bildungsweg
+					.about__item-content
+						each item in study
+							.about__item-sm 
+								h4= item.title 
+								h5.position= item.subtitle 
+								p.time= item.time
+

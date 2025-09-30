@@ -1,0 +1,8 @@
+mixin nav(currentTitle)
+    ul.menu
+        each item in menu
+            if item.url == currentTitle
+                li= item.title
+            else 
+                li
+                    a(href= item.url)= item.title

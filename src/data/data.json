@@ -1,0 +1,332 @@
+{
+  "menu": [
+    {
+      "url": "projects.html",
+      "title": "Projekte"
+    },
+    {
+      "url": "about.html",
+      "title": "Erfahrung"
+    },
+    {
+      "url": "contact.html",
+      "title": "Kontakt"
+    }
+  ],
+  
+  "projekts": [
+    {
+      "title": "Via Line",
+      "url": "project-via.html",
+      "image": "images/via-cover.png",
+      "type": "projects__item--img-left",
+      "class": "projects__item-img--via",
+      "descr": "Das Projekt optimiert den Prozess der Suche und Buchung von Frachttransporten, hilft Kunden, geeignete Transportmöglichkeiten zu finden und ermöglicht die Auswahl von Spediteuren nach Bewertungen und anderen Kriterien.",
+      "link": ""
+    },
+    {
+      "title": "Medizinischer Managementdienst",
+      "url": "project-med.html",
+      "image": "images/mmd-cover.png",
+      "type": "projects__item--img-right",
+      "class": "projects__item-img--med",
+      "descr": "Das System zur Verarbeitung von Berichten von medizinischen Organisationen. Ermöglicht das Sammeln von Daten von medizinischen Organisationen an einem zentralen Ort, die Verarbeitung von Berichten, die Sammlung von Statistiken und die Überwachung von untergeordneten medizinischen Einrichtungen.",
+      "link": ""
+    },
+    {
+      "title": "Evropafilmact",
+      "url": "project-evr.html",
+      "image": "images/evr-cover.png",
+      "type": "projects__item--img-left",
+      "class": "projects__item-img--evr",
+      "descr": "Die Website des jährlichen Festivals für europäisches Autorenkino in Paris: Auf der Website kann der Benutzer das Festivalprogramm einsehen, Informationen zu den Filmen lesen und Tickets für die Vorführungen erwerben.",
+      "link": ""
+    },
+    {
+      "title": "MyDoc (Web und App)",
+      "url": "project-mdoc.html",
+      "image": "images/mdoc-1.png",
+      "type": "projects__item--img-left",
+      "class": "projects__item-img--mdoc",
+      "descr": "Mit diesem Service kann man einen Arzttermin vereinbaren, eine Videoberatung erhalten und Laborergebnisse erklärt bekommen. Nach der Beratung sind alle Empfehlungen im persönlichen Patientenportal verfügbar. Auf der Website kann man nicht nur einen Arzt auswählen, sondern auch einen Kurs zur Gesundheitsförderung erwerben. Die Dienstleistungen können mit Hilfe der Krankenversicherung bezahlt werden und es ist möglich, eine Beratung mit dem Tierarzt zu erhalten.",
+      "link": ""
+    },
+    {
+      "title": "MyDoc Clinic",
+      "url": "",
+      "image": "images/mclinic-1.png",
+      "type": "projects__item--img-left",
+      "class": "projects__item-img--mclinic",
+      "descr": "Die Website einer medizinischen Klinik. Über die Website können Informationen zur Qualifikation der Ärzte, den angebotenen Dienstleistungen und Terminvereinbarungen eingesehen werden. Die Hauptaufgabe der Website besteht darin, den Benutzer zu informieren, Vertrauen zu schaffen, Bewertungen über die Ärzte bereitzustellen und ihn dazu zu bewegen, einen Termin zu vereinbaren.",
+      "link": ""
+    },
+    {
+      "title": "BearBike",
+      "url": "",
+      "image": "images/bearbike-1.png",
+      "type": "projects__item--img-right",
+      "class": "projects__item-img--bbike",
+      "descr": "Die Promotionssite über das Fahrradmodell Las Vegas 4.0 des Herstellers BierBike. Der Benutzer kann Details und Besonderheiten des Fahrerlebnisses auf einem Singlespeed-Fahrrad erfahren, Informationen zur Fahrradproduktion von BierBike, ihrer Leichtigkeit und den Vorteilen des Fahrens mit einem Fixie in städtischer Umgebung erhalten.",
+      "link": "https://hen04.github.io/bearbike-site/build/"
+    },
+    {
+      "title": "Podkast über Softskills",
+      "url": "",
+      "image": "images/podcast-1.png",
+      "type": "projects__item--img-left",
+      "class": "projects__item-img--soft",
+      "descr": "Podcast über Soft Skills. Das Design der Landingpage wurde von mir während der Arbeit bei Yandex.Praktikum erstellt. Die Website auf Russisch können Sie über den unten stehenden Link anzeigen.",
+      "link": "https://maybesofter.com/"
+    }
+  ],
+
+  "about": [
+    {
+      "title": "Design",
+      "descr": [
+        {
+          "item": "User Expirience Design"
+        },
+        {
+          "item": "User Flow"
+        },
+        {
+          "item": "Wireframing"
+        },
+        {
+          "item": "Personas"
+        },
+        {
+          "item": "Prototypen"
+        },
+        {
+          "item": "Responsive Design"
+        },
+        {
+          "item": "User Interface Design"
+        },
+        {
+          "item": "Design-Systems"
+        }
+      ]
+    },
+    {
+      "title": "Web Enwicklung",
+      "descr": [
+        {
+          "item": "HTML5"
+        },
+        {
+          "item": "PUG"
+        },
+        {
+          "item": "CSS3"
+        },
+        {
+          "item": "SCSS"
+        },
+        {
+          "item": "JavaScript"
+        },
+        {
+          "item": "GIT"
+        }
+      ]
+    },
+    {
+      "title": "Applications",
+      "descr": [
+        {
+          "item": "Figma"
+        },
+        {
+          "item": "FigJam"
+        },
+        {
+          "item": "Miro"
+        },
+        {
+          "item": "Adobe XD"
+        },
+        {
+          "item": "Webflow"
+        },
+        {
+          "item": "WebStorm"
+        },
+        {
+          "item": "VisualStudio"
+        }
+      ]
+    },
+    {
+      "title": "CMS als Benutzer",
+      "descr": [
+        {
+          "item": "WordPress"
+        },
+        {
+          "item": "Drupal"
+        },
+        {
+          "item": "Joomla"
+        }
+      ]
+    }
+  ],
+
+  "experience": [
+    {
+      "time": "09.2022 – bis jetzt",
+      "title": "Business-Secrets (T-Bank Medien für Unternehmer)",
+      "position": "Web-Entwicklerin und UX/UI Designerin",
+      "detail": [
+        {
+          "item": "Als UX/UI-Designerin arbeite ich derzeit an einem Mediaplaner für das Unternehmen Business-Secrets. In unserem Team sind etwa 60 Autoren und Redakteure aktiv, die täglich verschiedene Inhalte wie Artikel, Neuigkeiten und Forschungsergebnisse veröffentlichen. Der Mediaplaner ermöglicht es unserem Redaktionsteam, die Veröffentlichung von Inhalten über mehrere Wochen im Voraus zu planen. Dabei hilft das Tool, Routineaufgaben zu automatisieren, den menschlichen Aufwand zu reduzieren und den gesamten Veröffentlichungsprozess effizienter zu gestalten."
+        }
+      ]
+    },
+    {
+      "time": "08.2022–02.2022",
+      "title": "Yandex Praktikum",
+      "position": "Web-Designerin",
+      "detail": [
+        {
+          "item": "Als Web-Designerin bei Yandex Praktikum, einer Lernplattform, habe ich verschiedene Projekte für Studierende entwickelt und gestaltet. Hierbei lag mein Fokus darauf, die Inhalte sowohl benutzerfreundlich als auch visuell ansprechend aufzubereiten, um den Lernprozess optimal zu unterstützen. Im Anschluss habe ich ein umfassendes Design-System für interne Projekte erstellt, das für Konsistenz und eine moderne Gestaltung sorgt. Außerdem habe ich eine Landing Page für einen Podcast entworfen, die die Zielgruppe gezielt anspricht und das Projekt ideal präsentiert."
+        }
+      ]
+    },
+    {
+      "time": "01.2022–08.2020",
+      "title": "MyDoc (Telemedizin) und MyDoc Klinik",
+      "position": "UX/UI Designerin und Web-Entwicklerin",
+      "detail": [
+        {
+          "item": "Gemeinsam mit einem Projektmanager und einem Entwickler habe ich eine Telemedizin-Website erstellt. Über diese Plattform können Nutzer einen Arzt (Allgemeinmediziner oder Facharzt) finden, einen Termin buchen, Beratungen per Chat oder Videoanruf erhalten und Laborergebnisse einsehen. Die Plattform hat über 1 Million registrierte Nutzer, mehr als 200 Ärzte und es wurden rund 10.000 Konsultationen durchgeführt."
+        }, 
+        {
+          "item": "Zuvor habe ich als Webentwicklerin gearbeitet und für den Frontend-Bereich von Webseiten die Bibliothek Bootstrap verwendet. Statt CSS kam bei mir SCSS zum Einsatz, um mit Mixins, Variablen und Templates effizienter und flexibler zu arbeiten."
+        }
+      ]
+    }
+  ],
+
+  "values": [
+    {
+      "item": "Ich arbeite gerne sowohl in einem Team als auch selbstständig. Ich bin ziemlich flexibel und ich versuche immer eine gemeinsame Sprache mit meinen Kolleg:innen zu finden."
+    },
+    {
+      "item": "Meine Arbeitsweise ist diszipliniert und zuverlässig; ich lege großen Wert auf Termintreue und eine sorgfältige Umsetzung. Ich achte auf Details, habe jedoch auch im Blick, dass keine Schnittstelle absolut perfekt sein kann und sehe stets Potenzial für Verbesserungen."
+    },
+    {
+      "item": "Meine Kolleg:innen sagen, dass man sich auf die Qualität meiner Arbeit verlassen kann."
+    },
+    {
+      "item": "Es macht mir Spaß, mich nicht nur auf das Ergebnis, sondern auch auf den Prozess zu konzentrieren."
+    }
+  ],
+
+  "study": [
+    {
+      "title": "UX/UI-Design",
+      "subtitle":  "Online Universität Skillbox",
+      "time": "2020–2018"
+    },
+    {
+      "title": "Russische Sprache und Literatur",
+      "subtitle":  "Staatliche Universität Saratow",
+      "time": "2002–1996"
+    }
+  ],
+
+  "slider": [
+    {
+      "url": "images/mmd-05.png",
+      "info": "Eine Liste mit allen Berichten der medizinischen Einrichtung. Folgende Funktionen stehen dem Benutzer zur Verfügung: Bericht herunterladen, Bericht teilen, zurück zum Bearbeiten des Berichts gehen, Bericht löschen"
+    },
+    {
+      "url": "images/mmd-06.png",
+      "info": "Das Fenster zum Laden von neuen Berichten"
+    },
+    {
+      "url": "images/mmd-07.png",
+      "info": "Der Prozess des Hochladens eines neuen Dokuments"
+    },
+    {
+      "url": "images/mmd-08.png",
+      "info": "Bildschirm des Berichts. Der Benutzer kann den Bericht freigeben, die Daten auf Fehler prüfen und korrigieren"
+    },
+    {
+      "url": "images/mmd-09.png",
+      "info": "Das System hat mehrere Fehler gefunden, die rot hervorgehoben sind, es gibt Erklärungen, wie man die Fehler korrigieren kann"
+    },
+    {
+      "url": "images/mmd-10.png",
+      "info": "Fehler wurden korrigiert und der Bericht kann zur Überprüfung an die Hauptorganisation geschickt werden"
+    },
+    {
+      "url": "images/mmd-11.png",
+      "info": "Versenden eines Berichts. Nach dem Versenden wird der Status des Berichts auf „In Überprüfung“ geändert"
+    },
+    {
+      "url": "images/mmd-12.png",
+      "info": "Eine Liste von Berichten für die Rolle Manager. Neue Berichte sind mit dem Status „Neuer Bericht“ gekennzeichnet. Der Manager kann den Bericht teilen und prüfen"
+    },
+    {
+      "url": "images/mmd-13.png",
+      "info": "Bericht Seite. Der Manager hat die Möglichkeit, den Bericht zu überprüfen. Das System prüft nicht nur den Bericht, sondern vergleicht auch Daten aus bereits hochgeladenen Berichten anderer Organisationen für denselben Zeitraum"
+    },
+    {
+      "url": "images/mmd-14.png",
+      "info": "Prozess der Berichtsprüfung"
+    },
+    {
+      "url": "images/mmd-15.png",
+      "info": "Berichtsbildschirm mit Fehlern und Erläuterungen zu den Fehlern"
+    },
+    {
+      "url": "images/mmd-16.png",
+      "info": "Bildschirm, auf dem der Manager den Bericht mit einer Erklärung ablehnt"
+    }
+  ],
+
+  "viaLIne": [
+    {
+      "url": "images/via-05.png",
+      "strong": "Eine neue Fracht",
+      "info": " kann über ein einfaches Formular hinzugefügt werden."
+    },
+    {
+      "url": "images/via-06.png",
+      "strong": "Frachtsuche.",
+      "info": " Der veröffentlichte Auftrag erscheint in der Liste anderer Aufträge. Der Spediteur kann sein Angebot abgeben. Die Plattform analysiert die Größe der Fracht und die Entfernung und schlägt einen durchschnittlichen Preis für den Transport vor."
+    },
+    {
+      "url": "images/via-07.png",
+      "strong": "Ein Angebot abgeben.",
+      "info": " Es genügt, die Felder mit dem Betrag und der Lieferzeit auszufüllen. Die Informationen zum Angebot werden dem Auftraggeber per E-Mail und als Benachrichtigung zugesandt."
+    },
+    {
+      "url": "images/via-08.png",
+      "strong": "Angebotssammlung.",
+      "info": " Der Auftraggeber kann aus einer beliebigen Anzahl von Angeboten wählen. Es ist wichtig, auf die Bewertung des Spediteurs, den Preis und die Lieferzeit zu achten."
+    },
+    {
+      "url": "images/via-09.png",
+      "strong": "Bezahlung der Fracht.",
+      "info": " Der Auftraggeber kann den Transport in jeder Phase der Lieferung und sogar bis zu 5 Werktage nach der Lieferung bezahlen. Informationen zum Auftragsstatus werden per E-Mail und über die Plattform gesendet. Im Benutzerkonto können verschiedene Benachrichtigungsoptionen eingestellt werden."
+    },
+    {
+      "url": "images/via-10.png",
+      "strong": "Lieferung an die Adresse.",
+      "info": " Wenn sich die Fracht in der Lieferstadt befindet, kann der Spediteur Datum und Uhrzeit der Frachtlieferung festlegen."
+    },
+    {
+      "url": "images/via-11.png",
+      "strong": "Mobile und Tablet-Versionen.",
+      "info": " Da Spediteure die Plattform oft unterwegs nutzen, wurde die Website für sie angepasst, um eine bequeme Nutzung zu ermöglichen."
+    }
+  ]
+
+
+}

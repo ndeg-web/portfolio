@@ -1,0 +1,69 @@
+extends templates/layout
+include templates/_mixins
+
+block nav
+	- var currentTitle = "projects.html";
+	+nav(currentTitle)
+
+block content
+	main
+		.wrapper
+			h1 Projekte
+			.projects
+				each item in projekts.slice(0,3)
+					div(class="projects__item " + item.type) 
+						div(class="projects__item-img " + item.class)
+							.img-bg
+								if item.url !== ''
+									a(href= item.url)
+										img(src=item.image alt= item.title)
+								else 
+									img(src=item.image alt= item.title)
+						div(class="projects__item-text projects__item-text--right")
+							if item.url !== ''
+								h3
+									a(href= item.url)= item.title
+							else
+								h3= item.title
+							p= item.descr
+							if item.link !== ""
+								a(class="ext-link" target="_blank" href= item.link rel="nofollow") Webseite
+				
+				.projects__row
+					each item in projekts.slice(3,5)
+						div(class="projects__item") 
+							div(class="projects__item-img " + item.class)
+								.img-bg
+									if item.url !== ''
+										a(href= item.url)
+											img(src=item.image alt= item.title)
+									else 
+										img(src=item.image alt= item.title)
+							div(class="projects__item-text projects__item-text--right")
+								if item.url !== ''
+									h3
+										a(href= item.url)= item.title 
+								else
+									h3= item.title
+								p= item.descr
+								if item.link !== ""
+									a(class="ext-link" target="_blank" href= item.link rel="nofollow") Webseite
+
+				each item in projekts.slice(5,7)
+					div(class="projects__item " + item.type) 
+						div(class="projects__item-img " + item.class)
+							.img-bg
+								if item.url !== '' 
+									a(href= item.url)
+										img(src=item.image alt= item.title)
+								else 
+									img(src=item.image alt= item.title)
+						div(class="projects__item-text projects__item-text--right")
+							if item.url !== ''
+								h3
+									a(href= item.url)= item.title
+							else
+								h3= item.title
+							p= item.descr
+							if item.link !== ""
+								a(class="ext-link" target="_blank" href= item.link rel="nofollow") Webseite

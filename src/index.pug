@@ -1,0 +1,47 @@
+extends templates/layout
+include templates/_mixins
+
+block nav
+	+nav()
+
+block content
+	main.main
+		.wrapper
+			.main__about 
+				.main__about-text
+					.main__about-text-item
+						p 👋 Hallo, ich bin Nadja Degtjarewa.
+					.main__about-text-item
+						h4 Ich bin UX/UI Designerin und Web-Entwicklerin (html, css, js) aus Dresden.
+					.main__about-text-item 
+						p Web-Entwicklerin und UX/UI-Designerin bei 
+							a(href="https://secrets.tbank.ru/" rel="nofollow" target="_blank") Business-Secrets
+							|  (T-Bank Medien für Unternehmer)
+				.main__about-photo 
+					img(src="images/ndeg.jpg" alt="Web/UX/UI Designerin, Web-Entwicklerin")
+
+			h2 Meine Projekte
+			.projects
+				each item in projekts.slice(0,3)
+					div(class="projects__item " + item.type) 
+						div(class="projects__item-img " + item.class)
+							.img-bg
+								if item.url !== '' 
+									a(href= item.url) 
+										img(src=item.image alt= item.title)
+								else 
+									img(src=item.image alt= item.title) 
+						div(class="projects__item-text projects__item-text--right")
+							if item.url !== ''
+								h3
+									a(href= item.url)= item.title
+							else
+								h3= item.title 
+							p= item.descr
+							if item.link !== ""
+								a(class="ext-link" target="_blank" href= item.link rel="nofollow") Webseite
+				
+		.all-projects 
+			h2 
+				a(href="projects.html") Andere Projekte
+			a(href="projects.html" class="button") Anschauen
