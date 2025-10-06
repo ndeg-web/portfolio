@@ -435,7 +435,7 @@ a {
   position: relative;
   text-decoration: none;
   color: inherit;
-  transition: all 0.5s ease-out;
+  transition: all 0.6s ease-out;
 }
 a:after {
   content: "";
@@ -519,7 +519,7 @@ a:hover:after {
 }
 .menu a:hover {
   color: #3CAC84;
-  transition: all 0.5s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .wrapper {
@@ -916,7 +916,7 @@ footer {
   padding: 16px 32px;
   border-radius: 32px;
   letter-spacing: 1px;
-  transition: all 0.5s ease-out;
+  transition: all 0.6s ease-out;
 }
 .button:hover {
   background-color: #1E7A74;
