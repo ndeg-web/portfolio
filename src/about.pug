@@ -15,7 +15,7 @@ block content
 					.about__item-heading 
 						h3 Arbeitserfahrung  
 					.about__item-content 
-						each item in experience 
+						each item in experience.slice(1,3)
 							.about__item-sm 
 								h4= item.position 
 								h5.position= item.title 
